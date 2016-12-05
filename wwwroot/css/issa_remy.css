@@ -1,0 +1,252 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f3f3f3;
+    background-image: linear-gradient(to bottom, rgba(225, 206, 226, 0.2) 0%, rgba(225, 206, 226, 0.2) 100%), url("./img/image.jpg");
+   }
+
+.header{
+     padding: 5px 0px 5px 0;
+    text-align: center;
+    line-height: 32px;          
+}
+
+#header-nav-img, #imgHeader{
+    padding: 4px; 
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;   
+}
+
+.header-nav{
+  
+    background-color:#bf4080;
+     width: 100%;
+     padding: 10px 25px 40px 10px;  
+     opacity: 0.9;
+     filter: aplha(opacity=90);   
+}
+
+ul{
+    margin-top: 15px;
+}
+li{
+    display: inline-block;;
+    padding: 0 10px 0 10px;
+    font-size: 18px;
+    opacity: 0.8;
+    filter: aplha(opacity=80); 
+    }
+
+a{
+    text-decoration: none;
+    color:darkcyan;
+    padding: 8px;
+    font-variant: small-caps;
+  }
+a:hover{
+    color:#59d5d8;
+}
+
+main{
+     width:100%;
+    background: #F0F0F0;
+    border: 1px solid #CCC;
+    height: 100%;
+    margin: 20px auto;
+    
+    /*
+    -moz-column-count: 2;
+-webkit-column-count: 2;
+column-count: 2; */
+    }
+h1 { 
+     color: #7c795d; 
+     font-family: 'Trocchi', serif;
+     font-size: 45px;
+     font-weight: normal;
+     line-height: 48px;
+     margin: 20px; 
+     }
+
+h2 { 
+    color: #7c795d;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 28px;
+   font-weight: 400;
+   line-height: 32px;
+   margin: 20 0 24px; 
+   }
+   
+h3 { 
+    font-size: 18px; 
+font-weight: 300;
+ color: #ffcc66;
+  margin: 0 0 20 30px;
+   }
+
+/*  Form*/
+
+form {
+  position: relative;
+}
+ .form fieldset{
+position: absolute;
+}
+
+span {
+    display: block;
+    font-size: 11px;
+}
+label {
+  font : .8em "typewriter", sans-serif;
+  color: #888;
+}
+
+input{
+ padding: 3px 3px 3px 5px;  
+  width: 200px;
+  font-family: sans-serif;
+  font-size: 9px;
+  box-shadow: none;  
+  max-width:100%
+}
+
+textarea{
+   padding: 3px 3px 3px 5px;
+   height:200px;
+   width: 200px;
+   max-width: 100%;
+   margin-top:8px; 
+   margin-bottom:30px;  
+   
+}
+button {
+    background: #E27575;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+
+dl {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    color: #625463;
+}
+/*Table */
+table {
+    border-collapse: collapse;
+    margin:50px;
+    display: inline
+}
+th, td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+tr:hover{background-color:#f5f5f5}
+
+/*  Footer*/
+footer {
+  position: relative;
+  top: 90px;
+  padding: 1rem;
+  background-color:#E27575;
+  text-align: center;
+
+}
+
+
+dl{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+
+iframe {
+  border-top: #c00 1px dotted;
+  border-right: #c00 2px dotted;
+  border-left: #c00 2px dotted;
+  border-bottom: #c00 4px dotted;
+}
+address
+{
+margin: 30px;
+text-align:center;
+}
+
+video{ /* video border */
+ border: 1px solid #c00;
+ padding: 20px; margin: 10px;
+  border-radius: 20px; 
+  /* tranzitionstransitions applied to the vodeovideo element */ 
+  -moz-transition: all 1s ease-in-out; 
+  -webkit-transition: all 1s ease-in-out;
+   -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out; 
+    }
+object {
+       border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+img{
+      width: 50%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+
+
+
+/*
+
+
+padding: 50px 0px 5px 0;
+    text-align: center;
+    line-height: 32px;
+    background-color: #818181;
+
+.header{
+      height: 300px;
+    background-color: #fff;
+     max-width: 1500px;
+     padding: 32px;
+     margin: 0 auto;
+    
+   
+   
+}
+#header-nav-img {
+height: 300px;
+width: 95%;
+top:50px;
+right:40px;
+position: fixed;
+background-size: cover;
+}
+
+
+.header-nav a{
+    color: red;
+    text-decoration: none;   
+}
+.header-nav ul li:hover{
+display: block;
+/*transition: all 0.45s;
+}*/
+
+
