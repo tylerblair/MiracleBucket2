@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*html, body, div, span, applet, object, iframe,*/
+/*h1, h2, h3, h4, h5, h6, p, blockquote, pre,*/
+/*a, abbr, acronym, address, big, cite, code,*/
+/*del, dfn, em, img, ins, kbd, q, s, samp,*/
+/*small, strike, strong, sub, sup, tt, var,*/
+/*b, u, i, center,*/
+/*dl, dt, dd, ol, ul, li,*/
+/*fieldset, form, label, legend,*/
+/*table, caption, tbody, tfoot, thead, tr, th, td,*/
+/*article, aside, canvas, details, embed,*/
+/*figure, figcaption, footer, header,*/
+/*menu, nav, output, ruby, section, summary,*/
+/*time, mark, audio, video {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*border: 0;*/
+    /*font-size: 100%;*/
+    /*font: inherit;*/
+    /*vertical-align: baseline;*/
+/*}*/
+/*!* HTML5 display-role reset for older browsers *!*/
+/*article, aside, details, figcaption, figure,*/
+/*footer, header, menu, nav, section {*/
+    /*display: block;*/
+/*}*/
+/*body {*/
+    /*line-height: 1;*/
+/*}*/
+/*ol, ul {*/
+    /*list-style: none;*/
+/*}*/
+/*blockquote, q {*/
+    /*quotes: none;*/
+/*}*/
+/*blockquote:before, blockquote:after,*/
+/*q:before, q:after {*/
+    /*content: '';*/
+    /*content: none;*/
+/*}*/
+/*table {*/
+    /*border-collapse: collapse;*/
+    /*border-spacing: 0;*/
+/*}*/
+/* font styling */
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* header styling */
+body{
+    width: 80%;
+    margin: 0 auto;
+    background: -moz-linear-gradient(left,  rgba(169,67,242,1) 0%, rgba(169,67,242,0.87) 13%, rgba(169,67,242,0.55) 45%, rgba(169,67,242,0.5) 50%, rgba(169,67,242,0.43) 57%, rgba(255,255,255,0.01) 99%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(left,  rgba(169,67,242,1) 0%,rgba(169,67,242,0.87) 13%,rgba(169,67,242,0.55) 45%,rgba(169,67,242,0.5) 50%,rgba(169,67,242,0.43) 57%,rgba(255,255,255,0.01) 99%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right,  rgba(169,67,242,1) 0%,rgba(169,67,242,0.87) 13%,rgba(169,67,242,0.55) 45%,rgba(169,67,242,0.5) 50%,rgba(169,67,242,0.43) 57%,rgba(255,255,255,0.01) 99%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a943f2', endColorstr='#00ffffff',GradientType=1 );
+
+}
+hr{
+    display: none;
+}
+body>h1{
+    display: none;
+}
+h1[itemprop="funder"]{
+    display: none;
+}
+nav {
+    width: 100%;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    padding-right: 40px;
+}
+@media (min-width: 600px) {
+    nav ul{
+        display: flex;
+    }
+    nav li{
+        flex: 1;
+    }
+}
+nav li{
+    background-color: #808080;
+}
+nav li:hover{
+    background-color: #AAAAAA;
+}
+nav ul a{
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+    color: #DDDCDC;
+}
+#imgHeader,
+#header-nav-img{
+    width:90%;
+    clear: both;
+}
+#imgHeader{
+    border: 1px solid black;
+}
+header{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+/* main body of the page */
+
+#star ul,
+#platinum ul,
+#gold ul,
+#silver ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#star,
+#platinum,
+#gold,
+#silver{
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px 5px #A943F2;
+}
+#star h3,
+#platinum h3,
+#gold h3,
+#silver h3{
+    padding-left: 5px;
+    text-shadow: .02em .02em .02em #491f6d;
+    color: #A943F2;
+}
+#star ul li,
+#platinum ul li,
+#gold ul li,
+#silver ul li{
+    display: inline-block;
+    padding-right: 2em;
+}
+@media(min-width: 600px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    form[action="#"]{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%
+    }
+
+}
+form[action="#"]{
+    /*box-sizing: border-box;*/
+}
+label[for="address"]{
+    vertical-align: top;
+}
+form[action="#"]>p{
+    flex-basis: 100%;
+}
+form[action="#"] fieldset{
+    display: flex;
+
+    flex-basis: 100%;
+}
+form[action="#"] fieldset label{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+input{
+    min-width:0;
+}
+textarea{
+    flex-basis: 100%;
+    resize: horizontal;
+}
+input[name="address"]{
+    width: 300px;
+}
+.main_content a:link{
+    text-decoration: none;
+    color: #491f6d;
+}
+.main_content a:visited{
+    text-decoration: none;
+}
+.main_content a:focus,
+.main_content a:hover{
+    text-decoration: underline;
+    color: #A943F2;
+}
+.main_content h2{
+    flex-basis: 100%;
+}
+.main_content h3{
+    flex-basis: 50%;
+}
+.main_content video{
+    flex-basis: 45%;
+    padding-right: 8%;
+}
+.main_content object{
+    flex-basis: 45%
+}
+h3.video{
+    flex-basis: 100%;
+}
+div.recentMiracle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.recentMiracle h2{
+    order:1;
+    flex-basis: 100%;
+}
+.recentMiracle h4{
+    order:2;
+    flex-basis:100%;
+}
+.recentMiracle iframe{
+    order:4;
+    flex-basis: 45%;
+    resize: vertical;
+}
+.recentMiracle video{
+    order:3;
+    flex-basis: 45%;
+}
+div.miraclesByYear{
+    flex-basis: 45%;
+    /*order: 5;*/
+}
+div.miraclesByMonth{
+     flex-basis: 45%;
+     /*order: 4;*/
+}
+dt,
+#chequingInfo caption{
+    font-weight: bold;
+    text-decoration: underline;
+}
+main>p[itemprop="brand"]{
+    flex-basis: 100%;
+}
+#contactForm,
+h2#EmailInfo,
+.addressHeader,
+main>p,
+i[itemprop="address"],
+main>section,
+main>aside,
+main>figure{
+    flex-basis: 100%;
+}
+#chequingInfo tr td:nth-child(1){
+    text-align: right;
+    padding-right: 8px;
+}
+section>video,
+aside>div{
+    width: 100%;
+    height: auto;
+}
+#swfMovie,
+figure iframe{
+    width: 100%;
+}
+#extra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#extra h4{
+    flex-basis: 100%;
+}
+#extra object{
+    flex-basis: 100%;
+}
+#extra video{
+    flex-basis: 100%;
+}
+#bucket{
+    display: none;
+}
+#Location a{
+    display: none;
+}
+
+
+
+
+
+
+
