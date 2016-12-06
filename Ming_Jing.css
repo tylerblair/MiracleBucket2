@@ -1,0 +1,464 @@
+
+/* For Reset ------------------------------------------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	padding: 0;
+	margin: 0;
+ }
+
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+ }
+fieldset,img {
+ border: 0;
+ }
+ img {
+ display:block;
+ }
+address,caption,cite,code,dfn,th,var {
+ font-weight: normal;
+ font-style: normal;
+ }
+ol,ul {
+ list-style: none;
+ }
+caption,th {
+ text-align: left;
+ }
+h1,h2,h3,h4,h5,h6 {
+ font-weight: normal;
+ font-size: 100%;
+ }
+q:before,q:after {
+ content:'';
+ }
+abbr,acronym { border: 0;
+ }
+a {
+text-decoration:none;
+}
+
+/* For Default Fonts ----------------------------------------------------------------- */
+
+body, footer,                                                                      /*1*/
+label,input,button, textarea, p, div, ul, ol,li, legend, table, dt, dd, b, a, form /*2*/
+{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+
+strong, b {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 3em; /* 40px/16=2.5em */
+}
+
+h2 {
+    font-size: 1.875em; /* 30px/16=1.875em */
+}
+
+h3, h4, h5, h6 {
+    font-size: 1.55em; /* 14px/16=0.875em */
+}
+
+/* For Body ------------------------------------------------------- */
+body {
+ 	margin:0 auto;
+    background-color: #e0e0e0;
+    width: 80%;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+body > h1:first-child {
+    font-family: "Verdana", Geneva, sans-serif;
+	font-family: myFirstFont;
+    font-size:85px;
+	font-style: italic;
+	font-weight: bold;
+    color: pink;
+    text-shadow: 5px 5px #8073aa;
+    text-align: center;
+}
+
+/* Menu --------------------------------------- */
+
+.header-nav img, .navigation img, .nav img {
+	width: 100%;
+    height: 200px;
+	margin:0 auto;
+	border-radius: 5px;
+}
+
+header nav ul li {
+    /* need this because child uses position: absolute */
+    position: relative;
+    /* Make menu horizontal */
+    background-color: gray;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+header nav ul li a {  
+    /* Make links look like buttons */
+    display: block;
+    padding: .5em .6em;
+    color: #fff;
+    text-decoration: none;
+    background: none;
+}
+
+header nav ul li:hover {
+    /* Style hover on links */
+    background-color: #999;
+    background-color: orange;
+    color: green;
+}
+
+/* Breakpoiont 1 */
+@media screen and (min-width: 481px) {
+ 
+    header nav li {
+        float: block;
+    }
+/*
+main .mission, .recentMiracle {
+    width: 100.0%;
+}
+
+main form, .miraclesByYear, .miraclesByMonth {
+    width: 100.0%;
+}
+??? */
+}
+
+/* Breakpoiont 1 */
+@media screen and (min-width: 841px) {
+
+    header nav li {
+        float: left;
+    }
+}
+
+/* Main window ----------------------------------------------*/
+main {
+	background-color: #0FC;
+    background-color: #e0e0e0;
+	width: 100%;
+	/*  border: 1px solid black;  */
+	margin:0 auto;
+	clear: both;
+}
+
+main div, form, dl {
+    padding: 5px;
+    width: 100%;
+    overflow: auto;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+/* Breakpoiont 1 */
+/* Can be used to ourmission.html page *
+
+@media screen and (min-width: 641px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main div, form, dl, object {
+
+        width: 49%;
+        overflow: auto;
+    }
+}
+*/
+
+/* Breakpoiont 2 */
+/*
+@media screen and (min-width: 801px) {
+    
+    main div, form, dl, object {
+        width: 33.0%;
+        overflow: auto;
+    }
+}
+*/
+
+footer {
+    border: 1px solid gray;
+    background-color: #CAE693;
+    clear: both;
+    width: 100%;
+    margin:0 auto;
+    border-radius: 5px;
+    text-align:center;
+}
+
+/* Table --------------------------------------*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid gray;
+    empty-cells: hide;
+    border-spacing: 5px 3px;
+    border-collapse: collapse; 
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+/* Form --------------------------------------*/
+form label{
+    width: 200px;
+    display: block;
+    padding-right: 10px;
+}
+
+form input , textarea{
+    width: 200px;
+    text-align: left;
+    display: block;
+    padding-left: 10px;
+}
+
+/* ourMission.html --------------------------------------*/
+
+main .mission, .recentMiracle {
+    width: 49.0%;
+    float: left;
+    overflow: auto;
+    margin-right: 10px;
+}
+
+main form, .miraclesByYear, .miraclesByMonth {
+    width: 49.0%;
+    float: left;
+    overflow: auto;
+    margin-right: 10px;        
+}
+
+#starsMovie {
+    width: 100%;
+    height: 150px;
+}
+
+.recentMiracle iframe, video {
+        width: 48%;
+        height: 150px;
+}
+
+dt {
+    cursor: pointer;
+    font-weight: bold;
+    font-size : 1.5em;
+    line-height: 2em;
+    background: #e3e3e3;
+    border-bottom: 1px solid #c5c5c5;
+    border-top: 1px solid white;
+}
+
+dd {
+    margin: 0;
+    padding: 0em 0;
+    display: none;
+}
+
+dt:first-child { border-top: none; }
+dt:nth-last-child(2) { border-bottom: none; }
+
+dt:hover + dd{
+    display: inline;
+    /* Style hover on links */
+    background-color: green;
+    color:brown;
+}
+
+/*
+main ul, ol {
+    list-style-type: none;
+    text-align: left;
+}
+
+main ul, ol li{
+    height: 40px;
+    list-style-type: none;
+    }
+
+main ul, ol li a{
+    color: #888;
+    color: #202020;
+    font-size: 30px;
+    line-height: 40px;
+    display: block;
+    height: 40px;
+    padding-left: 25px;
+    text-decoration: none;
+    background: #3B5703;
+    }
+
+main ul, ol li a:visited{
+    color: black;
+    }
+
+main ul, ol li a:hover{
+    color: #FF832C;
+    background: #160940;
+    }
+
+main ul, ol li a:active {
+    color: blue;
+    text-decoration: underline;
+    }
+
+*/
+
+/* Who are we------------------------- */
+
+#form, #table{
+    width: 49.0%;
+    float: left;
+    overflow: auto;
+}
+
+ #Location {
+    width: 49.0%;
+    float: right;
+    overflow: auto;
+}
+
+#extra{
+    width: 49.0%;
+    float: right;
+    overflow: auto;
+}
+
+#extra object{
+    width: 100%;
+    float: left;
+    height: 300px;
+}
+
+#extra img {
+    width: 50%;
+    float: right;
+    height: 200px;
+} 
+
+#extra video{
+    width: 300px;
+    float: left;
+    height: 200px;
+}
+
+/* Contact ------------------------------------- */
+aside div {
+    width: 49.0%;
+    height: 600px;
+    float: left;
+    overflow: auto;
+}
+
+aside div #swfMovie{
+    width: 90%;
+    height: 85%;
+    overflow: auto;
+}
+
+figure {
+    width: 49.0%;
+    float: left;
+    overflow: auto; 
+    margin: 0px;
+}
+
+/* OurSponsors.html----------------------------------- */
+.main_content h2, h3{
+    clear: both;
+    display : block;
+    background-color: #A1C25E
+} 
+
+#star, #platinum, #gold, #silver  {
+    float: left;
+    display : inline;
+    width: 25%;
+    height: 600px;
+}
+
+#star img, #platinum img, #gold img, #silver img{
+    width: 100%;
+    height: 180px;
+    margin:0 auto;
+    border-radius: 5px;
+}
+
+.main_content form {
+    width: 100%;
+}
+
+.main_content video, object{
+    width: 48.0%;
+    height: 250px;
+    float: left;
+    overflow: auto; 
+    margin: 1px 10px;
+}
+
+.main_content form #address {
+    width: 33.0%;
+    height: 100px;
+}
+
+
+/* Normal ol ------------------------------------ */
+
+ol {
+    list-style-type: none;
+    text-align: left;
+}
+
+ol li{
+    height: 40px;
+    list-style-type: none;
+    }
+
+ol li a{
+    color: #888;
+    color: #202020;
+    font-size: 30px;
+    line-height: 40px;
+    display: block;
+    height: 40px;
+    padding-left: 25px;
+    text-decoration: none;
+    background: #8073AA;
+    }
+
+ol li a:visited{
+    color: black;
+    }
+
+ol li a:hover{
+    color: #FF832C;
+    background: #7B9F35;
+    }
+
+ol li a:active {
+    color: blue;
+    text-decoration: underline;
+    }
